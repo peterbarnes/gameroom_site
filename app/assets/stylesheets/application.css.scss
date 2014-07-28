@@ -83,8 +83,24 @@ body {
   font-weight: 100 !important;
 }
 
+.shadow {
+  text-shadow: 1px 1px $grpurple !important;
+}
+
 /* BOOTSTRAP OVERRIDES */
 
 hr {
-  border-top: 1px solid #5C5C5C !important;
+  border-top: 1px solid #5E5E5E !important;
+}
+
+.nav-tabs {
+  li.active a {
+    background-color: darken($background-color, 10%) !important;
+    border-radius: 0px !important;
+    color: black !important;
+  }
+
+  li a {
+    color: black !important;
+  }
 }
