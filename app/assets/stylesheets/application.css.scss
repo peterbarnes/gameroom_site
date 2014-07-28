@@ -45,6 +45,14 @@ body {
   }
 }
 
+a {
+  color: $grpurple !important;
+  &:hover {
+    text-decoration: none !important;
+    color: darken($grpurple, 10%) !important;
+  }
+}
+
 /* UTILITIES */
 
 .no-top {

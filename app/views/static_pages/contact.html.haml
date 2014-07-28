@@ -1,5 +1,11 @@
 .row
   .col-md-8.col-md-offset-2
+    %h1.text-center.light.shadow.big-bottom Follow us
+    %h3.text-center
+      %a{ href: 'https://www.facebook.com/GameroomforPresident', target: 'blank' }
+        %i.fa.fa-facebook-square.fa-5x
+.row
+  .col-md-8.col-md-offset-2
     %h1.text-center.light.shadow.huge-bottom Questions, comments, or concerns?
     .emailform
       = form_tag('/send', method: 'post') do 
