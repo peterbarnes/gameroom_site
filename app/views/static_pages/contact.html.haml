@@ -1,0 +1,17 @@
+.row
+  .col-md-8.col-md-offset-2
+    %h1.text-center.light.shadow.huge-bottom Questions, comments, or concerns?
+    .emailform
+      = form_tag('/send', method: 'post') do 
+        .form-group
+          = text_field_tag(:name, params[:name], class: "form-control input-lg", placeholder: "Name")
+
+        .form-group
+          = text_field_tag(:email, params[:email], class: "form-control input-lg", placeholder: "Email")
+
+        .form-group
+          = text_area_tag(:body, params[:body], class: "form-control input-lg", placeholder: "Message", rows: "5")
+
+        %button.btn.btn-primary.btn-block{ type: 'submit' }
+          %i.fa.fa-envelope
+          Send
