@@ -95,7 +95,18 @@ a {
   text-shadow: 1px 1px $grpurple !important;
 }
 
+.dark {
+  background-color: darken($background-color, 15%) !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
 /* BOOTSTRAP OVERRIDES */
+
+.container {
+  height: 100% !important;
+  background-color: #eaeaea !important;
+}
 
 hr {
   border-top: 1px solid #5E5E5E !important;
@@ -103,9 +114,9 @@ hr {
 
 .nav-tabs {
   li.active a {
-    background-color: darken($background-color, 10%) !important;
+    background-color: darken($background-color, 30%) !important;
     border-radius: 0px !important;
-    color: black !important;
+    color: white !important;
   }
 
   li a {
