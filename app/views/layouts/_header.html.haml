@@ -1,0 +1,18 @@
+.container-fluid
+  .col-md-12.huge-top.big-bottom
+    = image_tag('logo.png', size: '1000x250', class: 'img-responsive center-block')
+.container
+  .row
+    .navigation
+      .col-md-2.col-md-offset-1.text-center
+        = link_to "Home", root_path
+      .col-md-2.text-center
+        = link_to "Locations", locations_path
+      .col-md-2.text-center
+        = link_to "Services", services_path
+      .col-md-2.text-center
+        = link_to "Contact", contact_path
+      .col-md-2.text-center
+        = link_to "About", about_path
+
+

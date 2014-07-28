@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* VARIABLES */
+$background-color: #E8E8E8;
+$grpurple: #9600A3;
+
+/* GLOBAL STYLES */
+
+* {
+  font-family: 'Roboto' !important;
+}
+
+.fa {
+  font-family: FontAwesome !important;
+}
+
+body {
+  background-color: $background-color !important;
+}
+
+.navigation {
+  font-size: 25px !important;
+  font-weight: 100 !important;
+  a {
+    color: black !important;
+    transition: text-shadow 300ms ease-out;
+    &:hover {
+      text-shadow: 1px 1px $grpurple !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+/* UTILITIES */
+
+.no-top {
+  margin-top: 0px !important;
+}
+
+.small-top {
+  margin-top: 5px !important;
+}
+
+.big-top {
+  margin-top: 35px !important;
+}
+
+.huge-top {
+  margin-top: 65px !important;
+}
+
+.no-bottom {
+  margin-bottom: 0px !important;
+}
+
+.small-bottom {
+  margin-bottom: 5px !important;
+}
+
+.big-bottom {
+  margin-bottom: 35px !important;
+}
+
+.huge-bottom {
+  margin-bottom: 65px !important;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
