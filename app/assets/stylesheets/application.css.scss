@@ -16,12 +16,13 @@
 
 /* VARIABLES */
 $background-color: #FFFFFF;
-$grpurple: #9600A3;
+$grpurple: #9b59b6;
+$black: #333333;
 
 /* GLOBAL STYLES */
 
 * {
-  font-family: 'Roboto' !important;
+  font-family: 'Raleway' !important;
 }
 
 .fa {
@@ -35,13 +36,11 @@ body {
 .navigation {
   font-size: 18px !important;
   font-weight: 100 !important;
-  background-color: white !important;
+  background-color: $black !important;
   a {
-    color: black !important;
-    transition: text-shadow 300ms ease-out;
+    color: white !important;
     &:hover {
-      text-shadow: 1px 1px $grpurple !important;
-      text-decoration: none !important;
+      color: $grpurple !important;
     }
   }
 }
@@ -84,6 +83,14 @@ a {
   margin-bottom: 35px !important;
 }
 
+.bottom {
+  margin-bottom: 17px !important;
+}
+
+.top {
+  margin-top: 17px !important;
+}
+
 .huge-bottom {
   margin-bottom: 65px !important;
 }
@@ -97,15 +104,61 @@ a {
 }
 
 .bottom-split {
-  border-bottom: 2px solid #A8A8A8;
+  border-bottom: 2px solid darken($black, 30%) !important;
 }
-
-
 
 .dark {
   background-color: darken($background-color, 15%) !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
+}
+
+.padded {
+  padding: 165px; 
+}
+
+.purple {
+  background-color: $grpurple !important;
+  color: white !important;
+}
+
+.purple-font {
+  color: $grpurple !important;
+}
+
+.dark-purple {
+  background-color: darken($grpurple, 10%) !important;
+  color: white !important;
+}
+
+.thick-line {
+  line-height: 40px !important;
+}
+
+.big-font {
+  font-size: 80px;
+}
+
+.push-right {
+  padding-right: 10px !important;
+}
+
+.center {
+  display: inline-block !important;
+  line-height: 3.7 !important;
+}
+
+.circled {
+  border: 4px solid $black !important;
+  padding: 40px 80px 40px 80px !important;
+  border-radius: 200px;
+}
+
+.important {
+  background-color: $grpurple !important;
+  color: white !important;
+  padding: 15px !important;
+  border-radius: 7px !important;
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -143,5 +196,18 @@ hr {
     &:hover {
       background-color: darken($grpurple, 10%) !important;
     }
+  }
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  border-radius: 10px !important;
+  color: white !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  &:hover {
+    border: 2px solid darken(white, 30%) !important;
+    color: darken(white, 20%) !important;
   }
 }
