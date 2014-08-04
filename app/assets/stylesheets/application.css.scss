@@ -53,6 +53,17 @@ a {
   }
 }
 
+.flash {
+  background-color: lighten($grpurple, 5%) !important;
+}
+
+.form-element {
+  border-radius: 10px !important;
+  background-color: darken($grpurple, 10%) !important;
+  border: 1px solid darken($grpurple, 11%) !important;
+  color: white !important;
+}
+
 /* UTILITIES */
 
 .no-top {
@@ -132,7 +143,7 @@ a {
 }
 
 .light-purple {
-  background-color: lighten($grpurple, 10%) !important;
+  background-color: lighten($grpurple, 5%) !important;
   color: white !important;
 }
 
@@ -169,6 +180,10 @@ a {
 .pad-top-bottom {
   padding-top: 40px !important;
   padding-bottom: 40px !important;
+}
+
+.white {
+  color: white !important;
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -220,4 +235,13 @@ hr {
     border: 2px solid darken(white, 30%) !important;
     color: darken(white, 20%) !important;
   }
+}
+
+.alert {
+  margin-bottom: 0px !important;
+  color: white !important;
+}
+
+.form-control {
+  color: white !important;
 }

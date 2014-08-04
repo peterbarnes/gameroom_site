@@ -1,23 +1,23 @@
-.row
-  .col-md-8.col-md-offset-2
-    %h1.text-center.light.shadow.big-bottom Follow us
-    %h3.text-center
-      %a{ href: 'https://www.facebook.com/GameroomforPresident', target: 'blank' }
-        %i.fa.fa-facebook-square.fa-5x
-.row.huge-bottom
-  .col-md-8.col-md-offset-2
-    %h1.text-center.light.shadow.huge-bottom Questions, comments, or concerns?
-    .emailform
-      = form_tag('/send', method: 'post') do 
-        .form-group
-          = text_field_tag(:name, params[:name], class: "form-control input-lg", placeholder: "Name")
-
-        .form-group
-          = text_field_tag(:email, params[:email], class: "form-control input-lg", placeholder: "Email")
-
-        .form-group
-          = text_area_tag(:body, params[:body], class: "form-control input-lg", placeholder: "Message", rows: "5")
-
-        %button.btn.btn-primary.btn-block{ type: 'submit' }
-          %i.fa.fa-envelope
+.row.purple
+  .col-md-12.padded
+    %h1.text-center Questions, comments, or concerns?
+.row.dark-purple
+  .col-md-12.pad-top-bottom
+    %h1.text-center.small-bottom Talk to us on facebook!
+    %h2.text-center
+      %a.btn.btn-primary{ href: '#' }
+        %i.fa.fa-facebook-square.push-right
+        Gameroom For President
+.row.light-purple
+  .col-md-6.col-md-offset-3.pad-top-bottom
+    %h1.text-center.huge-bottom Email us!
+    = form_tag('/send', method: 'post') do 
+      .form-group.white
+        = text_field_tag(:name, params[:name], class: 'form-control input-lg text-center form-element white', placeholder: "Name")
+      .form-group
+        = text_field_tag(:email, params[:email], class: 'form-control input-lg text-center form-element white', placeholder: "Email")
+      .form-group
+        = text_area_tag(:body, params[:body], class: 'form-control input-lg form-element white', placeholder: "Message", rows: '6')
+      %h1.text-center
+        %button.btn.btn-primary{ type: 'submit' }
           Send

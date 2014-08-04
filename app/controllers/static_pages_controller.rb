@@ -25,9 +25,9 @@ class StaticPagesController < ApplicationController
 
   def sendit
     if Contact.email(params).deliver
-      flash[:success] = "Your message has been sent"
+      flash[:success] = "Thank you!  Your message has been sent!"
     else
-      flash[:error] = "Something went wrong"
+      flash[:error] = "Oops!  Something went wrong"
     end
       redirect_to contact_path
   end

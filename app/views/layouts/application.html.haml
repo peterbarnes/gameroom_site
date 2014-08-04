@@ -13,4 +13,10 @@
   %body
     = render 'layouts/header'
     .container-fluid
+      .row.flash
+        - flash.each do |key, value|
+          .alert.alert-dismissable
+            %button.close{ type: 'button', data: { dismiss: 'alert' } } &times;
+            %h4.no-bottom
+              = value
       = yield
