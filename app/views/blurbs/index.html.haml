@@ -1,0 +1,6 @@
+.row
+  - @blurbs.each do |b|
+    .col-md-12
+      = link_to edit_blurb_path(b) do 
+        %h1
+          = b.name

@@ -1,0 +1,11 @@
+.row
+  .col-md-6.col-md-offset-3
+    %h1.text-center.huge-top Sign in
+    = form_tag sessions_path do 
+      .form-group
+        = text_field_tag :name, "", class: 'form-control input-lg text-center', placeholder: "Name"
+      .form-group
+        = password_field_tag :password, "", class: "form-control input-lg text-center", placeholder: "Password"
+
+      %button.btn.center-block{ type: "submit" }
+        %h1 Log in

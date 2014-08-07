@@ -1,0 +1,10 @@
+.row.huge-top
+  .col-md-6.col-md-offset-3
+    = form_for @blurb do |f|
+      .form-group
+        = f.text_field :name, class: "form-control input-lg"
+      .form-group
+        = f.text_area :content, class: "form-control input-lg", rows: '5'
+
+      %button.btn.center-block{ type: 'submit' }
+        %h4 Update blurb

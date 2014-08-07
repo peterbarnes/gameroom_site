@@ -18,7 +18,9 @@
   .col-md-12
     %h1.text-center.big-font.huge-top.huge-bottom.purple-font
       %i.fa.fa-usd.fa-2x.circled 
-    %h1.text-center.big-font Deal of the week
+    %h1.text-center.big-font 
+      = @blurb.name
     %h3.text-center.huge-bottom
-      %span.important 360 games are 1000% off!
+      %span.important 
+        = @blurb.content
       

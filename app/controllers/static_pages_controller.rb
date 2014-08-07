@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    
+    @blurb = Blurb.first
   end
 
   def locations
