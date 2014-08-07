@@ -13,11 +13,11 @@
     %h1.text-center.huge-bottom Email us!
     = form_tag('/send', method: 'post') do 
       .form-group.white
-        = text_field_tag(:name, params[:name], class: 'form-control input-lg text-center form-element white', placeholder: "Name")
+        = text_field_tag(:name, params[:name], class: 'form-control input-lg text-center form-element', placeholder: "Name")
       .form-group
-        = text_field_tag(:email, params[:email], class: 'form-control input-lg text-center form-element white', placeholder: "Email")
+        = text_field_tag(:email, params[:email], class: 'form-control input-lg text-center form-element', placeholder: "Email")
       .form-group
-        = text_area_tag(:body, params[:body], class: 'form-control input-lg form-element white', placeholder: "Message", rows: '6')
+        = text_area_tag(:body, params[:body], class: 'form-control input-lg form-element', placeholder: "Message", rows: '6')
       %h1.text-center
         %button.btn.btn-primary{ type: 'submit' }
           Send

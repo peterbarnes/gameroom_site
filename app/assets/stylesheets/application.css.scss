@@ -59,9 +59,9 @@ a {
 
 .form-element {
   border-radius: 10px !important;
-  background-color: darken($grpurple, 10%) !important;
+  background-color: $background-color !important;
   border: 1px solid darken($grpurple, 11%) !important;
-  color: white !important;
+  color: black !important;
 }
 
 /* UTILITIES */
@@ -243,5 +243,5 @@ hr {
 }
 
 .form-control {
-  color: white !important;
+  color: #333 !important;
 }
