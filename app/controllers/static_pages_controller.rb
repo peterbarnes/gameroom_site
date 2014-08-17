@@ -20,7 +20,7 @@ class StaticPagesController < ApplicationController
   end
 
   def index
-    params[:email] ||= 'barnespeter213@gmail.com'
+    params[:email] ||= 'andrewhannagameroom@gmail.com'
   end
 
   def sendit
