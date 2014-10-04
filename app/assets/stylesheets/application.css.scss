@@ -137,15 +137,6 @@ a {
   color: $grpurple !important;
 }
 
-.token-font {
-  color: #D1D152 !important;
-  text-shadow:
-   -1px -1px 0 #47471A,  
-    1px -1px 0 #47471A,
-    -1px 1px 0 #47471A,
-     1px 1px 0 #47471A;
-}
-
 .dark-purple {
   background-color: darken($grpurple, 10%) !important;
   color: white !important;
@@ -172,14 +163,6 @@ a {
 .center {
   display: inline-block !important;
   line-height: 3.7 !important;
-}
-
-.circled {
-  border: 3px solid #404019 !important;
-  padding: 40px 80px 40px 80px !important;
-  border-radius: 200px;
-  background-color: #F0F043 !important;
-
 }
 
 .important {
